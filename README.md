@@ -10,6 +10,7 @@ Some useful R code for reuse
 
 - [Fill NAs with last non-NA values](fill_NA_with_last_non-NA.R)
 - [Insert values after specified indices](insert_value_after_index.R)
+- [Apply function to grouped data](grouped_data_calculations.R)
 
 # Functions
 
