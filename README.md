@@ -5,6 +5,7 @@ Some useful R code for reuse
 # Graphics
 
 - [Draw grid behind histogram](add_grid_behind_histogram.R)
+- [Create jittered dotplot with median lines](jittered_dotplot_ggplot2.R)
 
 # Vector manipulation
 
