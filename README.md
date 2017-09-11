@@ -19,4 +19,4 @@ Some useful R code for reuse
 
 # Data handling and manipulation
 
-- [Matching period beginnings to events in grouped data using data.table](rolling_join.R)
+- [Matching period beginnings to events in grouped data using rolling joins in data.table](rolling_join.R)
