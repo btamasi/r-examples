@@ -16,6 +16,7 @@ Some useful R code for reuse
 # Functions
 
 - [Evaluate a function recursively using previous results](evaluate_function_recursively.R)
+- [Short-circuit evaluation](short-circuiting.R)
 
 # Data handling and manipulation
 
