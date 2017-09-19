@@ -13,6 +13,7 @@ Some useful R code for reuse
 - [Insert values after specified indices](insert_value_after_index.R)
 - [Apply function to grouped data](grouped_data_calculations.R)
 - [Compare the elements of two vectors](compare_vector_elements.R)
+- [Get duplicated elements from a vector](get_duplicated_elements.R)
 
 # Functions
 
