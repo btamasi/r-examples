@@ -1,0 +1,87 @@
+---
+title: "Visualizing Conditional Distributions using ggplot2"
+---
+
+# Exercise 3
+
+Load packages and the data set:
+
+```{r echo = FALSE, warning = FALSE, message = FALSE}
+library("ggplot2")
+library("dplyr")
+library("stringr")
+data("CHFLS", package = "HSAUR2")
+```
+
+# Histograms on facets
+
+Plot histograms by groups on facets, setting the binwith according to the range of the data. Set the scales for each plot freely.
+
+```{r}
+CHFLS %>%
+  ggplot(aes(x = R_income)) + 
+  geom_histogram(fill = "red", binwidth = diff(range(CHFLS$R_income))/50) + 
+  facet_wrap(~ R_edu, scales = "free") + 
+  theme_bw()
+```
+
+# Barplots by groups
+
+Stacked barplots
+
+```{r}
+CHFLS %>%
+  ggplot(aes(x = R_happy, fill = R_edu)) + geom_bar() + 
+  theme_bw()
+```
+
+Barplots on facets wrapping the text on the x axis using _stringr_ package.
+
+```{r}
+CHFLS %>%
+  ggplot(aes(x = R_happy)) + 
+  facet_wrap(~ R_edu) + 
+  geom_bar(fill = "red") +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 6)) +
+  theme_bw()
+```
+
+# Jittered dotplot
+
+Convert continuous data to discrete with _cut_. Plot data points by groups as _jittered dotplot_, and add boxes for median and quartiles.
+
+```{r}
+CHFLS %>%
+  mutate(R_income_group = cut(R_income, c(0, 250, 500, 1000, 10001), right = FALSE)) %>%
+  ggplot(aes(x = R_income_group, y = R_age)) + 
+  geom_jitter(position = position_jitter(0.25), alpha = 0.4) +
+  stat_summary(fun.y = median, fun.ymin = function(x) quantile(x, 0.25), 
+               fun.ymax = function(x) quantile(x, 0.75),
+               geom = "crossbar", width = 0.5, col = "red") +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  theme_bw()
+```
+
+
+## Grouped scatterplots
+
+Draw a single scatterplot, groups as different colors. Draw regression lines without confidence intervals for a better visibility.
+
+```{r}
+CHFLS %>%
+  ggplot(aes(x = R_income, y = A_income, color = A_edu)) + 
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  theme_bw()
+```
+
+Draw scatterplots by groups on facets, set plot scales independently, add regression lines with confidence intervals.
+
+```{r}
+CHFLS %>%
+  ggplot(aes(x = R_income, y = A_income)) + 
+  geom_point(color = "red") + facet_wrap(~ A_edu, scales = "free") +
+  geom_smooth(method = lm, color = "black") +
+  theme_bw()
+```
+
