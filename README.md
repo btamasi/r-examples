@@ -11,13 +11,14 @@ Some useful R code for reuse
 - [Various ways of visualizing conditional distributions with ggplot2](cond_dist_ggplot.Rmd)
 - [Wrap text on axis with stringr](cond_dist_ggplot.Rmd)
 
-# Vector manipulation
+# Vector and matrix manipulation
 
 - [Fill NAs with last non-NA values](fill_NA_with_last_non-NA.R)
 - [Insert values after specified indices](insert_value_after_index.R)
 - [Apply function to grouped data](grouped_data_calculations.R)
 - [Compare the elements of two vectors](compare_vector_elements.R)
 - [Get duplicated elements from a vector](get_duplicated_elements.R)
+- [Create AR(1) correlation matrix](ar_cor_matrix.R)
 
 # Functions
 
