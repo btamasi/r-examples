@@ -10,6 +10,7 @@ Some useful R code for reuse
 - [Legend with expressions and values from variables](Weibull_multiplot.R)
 - [Various ways of visualizing conditional distributions with ggplot2](cond_dist_ggplot.Rmd)
 - [Wrap text on axis with stringr](cond_dist_ggplot.Rmd)
+- [QQ-plot for non-normal distribution](qqplot_gamma.R)
 
 # Vector and matrix manipulation
 
@@ -19,6 +20,7 @@ Some useful R code for reuse
 - [Compare the elements of two vectors](compare_vector_elements.R)
 - [Get duplicated elements from a vector](get_duplicated_elements.R)
 - [Create AR(1) correlation matrix](ar_cor_matrix.R)
+- [Count consecutive 1s in a vector](count_consecutive.R)
 
 # Functions
 
