@@ -21,13 +21,19 @@ Some useful R code for reuse
 - [Get duplicated elements from a vector](get_duplicated_elements.R)
 - [Create AR(1) correlation matrix](ar_cor_matrix.R)
 - [Count consecutive 1s in a vector](count_consecutive.R)
+- [Get the (non-main) diagonals of a matrix](get_diagonals_matrix.R)
 
 # Functions
 
 - [Evaluate a function recursively using previous results](evaluate_function_recursively.R)
 - [Short-circuit evaluation](short-circuiting.R)
+- [Updating lm objects recursively to eliminate insignificant variables](update_lm_recursion.R)
 
 # Data handling and manipulation
 
 - [Match period beginnings to events in grouped data using rolling join in data.table](rolling_join.R)
 - [Read data from an url with RCurl](read_csv_from_url.R)
+
+# Package specific
+
+- [survival: lagged time dependent covariates](lagged_tdc_survival.R)
