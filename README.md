@@ -11,6 +11,7 @@ Some useful R code for reuse
 - [Various ways of visualizing conditional distributions with ggplot2](cond_dist_ggplot.Rmd)
 - [Wrap text on axis with stringr](cond_dist_ggplot.Rmd)
 - [QQ-plot for non-normal distribution](qqplot_gamma.R)
+- [Paired plot for baseline and follow-up measurements](paired_plot.R)
 
 # Vector and matrix manipulation
 
@@ -28,6 +29,8 @@ Some useful R code for reuse
 - [Evaluate a function recursively using previous results](evaluate_function_recursively.R)
 - [Short-circuit evaluation](short-circuiting.R)
 - [Updating lm objects recursively to eliminate insignificant variables](update_lm_recursion.R)
+- [Extract model matrix and response vector using formula](logit_optim.R)
+- [Calculate MLE of logit model using optim()](logit_optim.R)
 
 # Data handling and manipulation
 
@@ -37,3 +40,7 @@ Some useful R code for reuse
 # Package specific
 
 - [survival: lagged time dependent covariates](lagged_tdc_survival.R)
+
+# Simulations
+
+- [Approximating pi with Monte Carlo methods](pi_MC.R)
