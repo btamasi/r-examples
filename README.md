@@ -44,3 +44,7 @@ Some useful R code for reuse
 # Simulations
 
 - [Approximating pi with Monte Carlo methods](pi_MC.R)
+
+# Statistics
+
+- [Power curves, and determinants of the power of a test](power_curves.R)
