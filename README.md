@@ -48,3 +48,6 @@ Some useful R code for reuse
 # Statistics
 
 - [Power curves, and determinants of the power of a test](power_curves.R)
+- [Calculate MLE of logit model using optim()](logit_optim.R)
+- [Poisson regression with offset](poisson_reg_offset.R)
+- [Setting contrasts for factors in lm()](contrasts_lm.R)
