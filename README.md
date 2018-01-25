@@ -51,3 +51,4 @@ Some useful R code for reuse
 - [Calculate MLE of logit model using optim()](logit_optim.R)
 - [Poisson regression with offset](poisson_reg_offset.R)
 - [Setting contrasts for factors in lm()](contrasts_lm.R)
+- [Comparing likelihood-based confidence intervals for binomial data](binom_ci_coverage.R)
