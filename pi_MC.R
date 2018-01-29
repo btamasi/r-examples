@@ -2,7 +2,7 @@
 ##
 ##   Approximation of the value of pi with Monte Carlo methods
 ##
-##   date:   12/11/2017
+##   date:   29/1/2018
 ##   author: Balint Tamasi
 ##
 ####################################################################
@@ -33,7 +33,7 @@ lines(seq_along(y)[-(1:9)], y[-(1:9)] - 2 * se[-(1:9)],
 abline(h = pi, lty = 2, lwd = 2)
 legend("topright", 
        c(expression(pi), "Estimation", "Estimation +/- 2*SE"),
-       lty = c(2, 1, 3), lwd = c(2, 2, 1), bty = "n")
+       lty = c(2, 1, 3), lwd = c(2, 2, 1), bty = "n", cex = 0.8)
 
 
 ####################################################################
@@ -60,7 +60,7 @@ lines(seq_along(m)[-(1:9)], m[-(1:9)] - 2 * se[-(1:9)],
 abline(h = pi, lty = 2, lwd = 2)
 legend("topright", 
        c(expression(pi), "Estimation", "Estimation +/- 2*SE"),
-       lty = c(2, 1, 3), lwd = c(2, 2, 1), bty = "n")
+       lty = c(2, 1, 3), lwd = c(2, 2, 1), bty = "n", cex = 0.8)
 
 
 ####################################################################
@@ -68,13 +68,14 @@ legend("topright",
 ####################################################################
 library("foreach")
 library("doParallel")
+library("doRNG")  ## for reproducible parallel simulations
 registerDoParallel(cores = 4)
 
 N <- 5000   ## # of repetitions
 n <- 1e5    ## # of draws
 
-set.seed(1234) ## !!! does not work
-piest <- foreach(i = 1:N, .combine = rbind) %dopar% {
+set.seed(1234) ## using %dorng% instead of %dopar%
+piest <- foreach(i = 1:N, .combine = rbind) %dorng% {
   y1 <- mean((runif(n)^2 + runif(n)^2 < 1) * 4)
   y2 <- mean(4 * sqrt(1 - runif(n)^2))
   c(y1, y2)
@@ -98,5 +99,5 @@ text(pi, 20, expression(pi), pos = 4, cex = 1.5)
 legend("topleft", 
        legend = c("Hit-or-miss method", "Sample mean method"),
        fill = c(rgb(1, 0, 0, 0.3), rgb(0, 0, 1, 0.3)),
-       bty = "n")
-
+       border = c("red", "blue"),
+       bty = "n", cex = 0.8)
