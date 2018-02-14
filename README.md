@@ -12,6 +12,7 @@ Some useful R code for reuse
 - [Wrap text on axis with stringr](cond_dist_ggplot.Rmd)
 - [QQ-plot for non-normal distribution](qqplot_gamma.R)
 - [Paired plot for baseline and follow-up measurements](paired_plot.R)
+- [Legend settings](bivar_loglik_profilelik.R)
 
 # Vector and matrix manipulation
 
@@ -53,3 +54,4 @@ Some useful R code for reuse
 - [Poisson regression with offset](poisson_reg_offset.R)
 - [Setting contrasts for factors in lm()](contrasts_lm.R)
 - [Likelihood: Comparing likelihood-based confidence intervals for binomial data](binom_ci_coverage.R)
+- [Likelihood: Joint likelihood and profile likelihood](bivar_loglik_profilelik.R)
