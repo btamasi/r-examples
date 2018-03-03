@@ -13,6 +13,7 @@ Some useful R code for reuse
 - [QQ-plot for non-normal distribution](qqplot_gamma.R)
 - [Paired plot for baseline and follow-up measurements](paired_plot.R)
 - [Legend settings](bivar_loglik_profilelik.R)
+- [Survival: Plotting fitted parametric survivor functions](plot_param_surv.R)
 
 # Vector and matrix manipulation
 
@@ -55,3 +56,4 @@ Some useful R code for reuse
 - [Setting contrasts for factors in lm()](contrasts_lm.R)
 - [Likelihood: Comparing likelihood-based confidence intervals for binomial data](binom_ci_coverage.R)
 - [Likelihood: Joint likelihood and profile likelihood](bivar_loglik_profilelik.R)
+- [Survival: Fitting parametric survival model](plot_param_surv.R)
