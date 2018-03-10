@@ -57,3 +57,4 @@ Some useful R code for reuse
 - [Likelihood: Comparing likelihood-based confidence intervals for binomial data](binom_ci_coverage.R)
 - [Likelihood: Joint likelihood and profile likelihood](bivar_loglik_profilelik.R)
 - [Survival: Fitting parametric survival model](plot_param_surv.R)
+- [Testing linear parameter restrictions in a normal linear regression model](test_param_rest_lm.R)
