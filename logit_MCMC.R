@@ -3,6 +3,8 @@
 ##   Logistic regression with Metropolis sampling
 ##    - Random walk proposals
 ##    - Drawing proposals independently
+##    - Standard deviations of the proposal are set to make
+##      acceptance rates roughly 0.5
 ##
 ##   date:   20/3/2018
 ##   author: Balint Tamasi
@@ -40,9 +42,9 @@ log_post_logit <- function(y, n, x, b0, b1) {
 ## Parameters to be tweaked
 ####################################################################
 n_sim    <- 10000 ## # of draws to be saved
-n_burnin <- 5000  ## burn-in pariod
+n_burnin <- 5000  ## burn-in
 thin     <- 5     ## thinning the Markov chain
-s0       <- 1     ## SD of the proposal for intercept
+s0       <- 0.3   ## SD of the proposal for intercept
 s1       <- 10    ## SD of the proposal for slope
 
 
@@ -54,6 +56,8 @@ set.seed(100)
 post <- matrix(0, nrow = n_sim, ncol = 2)
 b1_old <- 0 ## initial slope
 b0_old <- 1 ## initial intercept
+acc0 <- 0
+acc1 <- 0
 for (i in 1:(n_sim*thin + n_burnin)) {
   ## Intercept, conditional on slope
   b0 <- b0_old + rnorm(1, mean = 0, sd = s0) ## RW proposal
@@ -61,6 +65,7 @@ for (i in 1:(n_sim*thin + n_burnin)) {
                     log_post_logit(dat$y, dat$n, dat$x, b0_old, b1_old))
   if (acc_prob > log(runif(1))) {
     b0_old <- b0
+    acc0 <- acc0 + 1
   } else {
     b0 <- b0_old
   }
@@ -70,6 +75,7 @@ for (i in 1:(n_sim*thin + n_burnin)) {
                     log_post_logit(dat$y, dat$n, dat$x, b0, b1_old))
   if (acc_prob > log(runif(1))) {
     b1_old <- b1
+    acc1 <- acc1 + 1
   } else {
     b1 <- b1_old
   }
@@ -83,6 +89,7 @@ for (i in 1:(n_sim*thin + n_burnin)) {
 ####################################################################
 ## Results
 ####################################################################
+## Marginal posteriors
 sim_sum <- function(x) 
   c(mean = mean(x), sd = sd(x), quantile(x, c(0.025, 0.5, 0.975)))
 
@@ -98,3 +105,7 @@ plot(post[, 2], type = "l", ylab = "Slope", col = grey(0.3,0.4))
 hist(post[, 2], col = grey(0.3, 0.4), breaks = 30,
      main = "Slope", xlab = "")
 abline(v = beta1, col = "red")
+
+## Acceptance rates
+(acc_rate0 <- acc0 / (n_sim*thin + n_burnin))
+(acc_rate1 <- acc1 / (n_sim*thin + n_burnin))
