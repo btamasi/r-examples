@@ -14,6 +14,7 @@ Some useful R code for reuse
 - [Paired plot for baseline and follow-up measurements](paired_plot.R)
 - [Legend settings](bivar_loglik_profilelik.R)
 - [Survival: Plotting fitted parametric survivor functions](plot_param_surv.R)
+- [Comparing discrete distrinutions using empirical CDF](binom_vs_poisson.R)
 
 # Vector and matrix manipulation
 
@@ -47,6 +48,7 @@ Some useful R code for reuse
 
 - [Approximating pi with Monte Carlo methods](pi_MC.R)
 - [Reproducible parallel simulations](pi_MC.R)
+- [Connection between Binomial and Poisson distributions](binom_vs_poisson.R)
 
 # Statistics
 
