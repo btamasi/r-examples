@@ -14,7 +14,8 @@ Some useful R code for reuse
 - [Paired plot for baseline and follow-up measurements](paired_plot.R)
 - [Legend settings](bivar_loglik_profilelik.R)
 - [Survival: Plotting fitted parametric survivor functions](plot_param_surv.R)
-- [Comparing discrete distrinutions using empirical CDF](binom_vs_poisson.R)
+- [Comparing discrete distributions using empirical CDF](binom_vs_poisson.R)
+- [Points with error bars using base R](error_bars.R)
 
 # Vector and matrix manipulation
 
