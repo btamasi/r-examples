@@ -28,6 +28,7 @@ Some useful R code for reuse
 - [Create AR(1) correlation matrix](ar_cor_matrix.R)
 - [Count consecutive 1s in a vector](count_consecutive.R)
 - [Get the (non-main) diagonals of a matrix](get_diagonals_matrix.R)
+- [Converting integers to base 2 vectors](int_to_base2.R)
 
 # Functions
 
