@@ -17,6 +17,7 @@ Some useful R code for reuse
 - [Comparing discrete distributions using empirical CDF](binom_vs_poisson.R)
 - [Points with error bars using base R](error_bars.R)
 - [Histogram with legend for bar and line](hist_legend_bar_line.R)
+- [Create animation with library(animation)](gol.R)
 
 # Vector and matrix manipulation
 
@@ -52,6 +53,7 @@ Some useful R code for reuse
 - [Approximating pi with Monte Carlo methods](pi_MC.R)
 - [Reproducible parallel simulations](pi_MC.R)
 - [Connection between Binomial and Poisson distributions](binom_vs_poisson.R)
+- [Conway's Game of Life](gol.R)
 
 # Statistics
 
