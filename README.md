@@ -16,6 +16,7 @@ Some useful R code for reuse
 - [Survival: Plotting fitted parametric survivor functions](plot_param_surv.R)
 - [Comparing discrete distributions using empirical CDF](binom_vs_poisson.R)
 - [Points with error bars using base R](error_bars.R)
+- [Histogram with legend for bar and line](hist_legend_bar_line.R)
 
 # Vector and matrix manipulation
 
