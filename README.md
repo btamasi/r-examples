@@ -49,6 +49,7 @@ Some useful R code for reuse
 # Package specific
 
 - [survival: lagged time dependent covariates](lagged_tdc_survival.R)
+- [animation: creating animations and saving as gif](gol.R)
 
 # Simulations
 
