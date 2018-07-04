@@ -57,6 +57,7 @@ gol_plot <- function(grid) {
 library("animation")
 ani.options(interval = 0.1, nmax = 200)
 quartz(width = 3, height = 3)
+set.seed(100)
 world <- matrix(sample(c(0, 1), 150 * 150, replace = TRUE, 
                        prob = c(0.7, 0.3)), nrow = 150)
 for (i in 1:ani.options('nmax')) {
@@ -64,3 +65,21 @@ for (i in 1:ani.options('nmax')) {
   ani.pause()
   world <- gol_step(world, wrapped = TRUE)
 }
+
+## Saving as a gif
+## ===============
+# set.seed(100)
+# world <- matrix(sample(c(0, 1), 150 * 150, replace = TRUE, 
+#                        prob = c(0.7, 0.3)), nrow = 150)
+# saveGIF({
+#   ani.options(nmax = 200)
+#   for (i in 1:ani.options('nmax')) {
+#     gol_plot(world)
+#     ani.pause()   ## pause for a while ('interval')
+#     gun <- gol_step(world)
+#   }
+# }, 
+# interval = 0.1, 
+# movie.name = 'gol_demo.gif', 
+# ani.width = 300, 
+# ani.height = 300)
