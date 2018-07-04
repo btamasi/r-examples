@@ -46,7 +46,7 @@ gol_plot <- function(grid) {
   ## Plot the grid in Game of Life
   stopifnot(is.matrix(grid))
   par(mar = c(1, 1, 1, 1))
-  image(grid, useRaster = TRUE, axes = FALSE,
+  image(t(apply(grid, 2, rev)), useRaster = TRUE, axes = FALSE,
         col = c(0, 1))
 }
 
@@ -56,7 +56,6 @@ gol_plot <- function(grid) {
 
 library("animation")
 ani.options(interval = 0.1, nmax = 200)
-quartz(width = 3, height = 3)
 set.seed(100)
 world <- matrix(sample(c(0, 1), 150 * 150, replace = TRUE, 
                        prob = c(0.7, 0.3)), nrow = 150)
