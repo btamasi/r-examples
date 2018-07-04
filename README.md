@@ -30,6 +30,7 @@ Some useful R code for reuse
 - [Count consecutive 1s in a vector](count_consecutive.R)
 - [Get the (non-main) diagonals of a matrix](get_diagonals_matrix.R)
 - [Converting integers to base 2 vectors](int_to_base2.R)
+- [Converting base 2 vectors to decimals with Reduce()](elementary_ca.R)
 
 # Functions
 
@@ -38,6 +39,7 @@ Some useful R code for reuse
 - [Updating lm objects recursively to eliminate insignificant variables](update_lm_recursion.R)
 - [Extract model matrix and response vector using formula](logit_optim.R)
 - [Calculate MLE of logit model using optim()](logit_optim.R)
+- [Functions as inputs and outputs of other functions](elementary_ca.R)
 
 # Data handling and manipulation
 
@@ -54,6 +56,7 @@ Some useful R code for reuse
 - [Reproducible parallel simulations](pi_MC.R)
 - [Connection between Binomial and Poisson distributions](binom_vs_poisson.R)
 - [Conway's Game of Life](gol.R)
+- [Wolfram's elementary cellular automata](elementary_ca.R)
 
 # Statistics
 
