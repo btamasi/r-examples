@@ -58,6 +58,7 @@ Some useful R code for reuse
 - [Connection between Binomial and Poisson distributions](binom_vs_poisson.R)
 - [Conway's Game of Life](gol.R)
 - [Wolfram's elementary cellular automata](elementary_ca.R)
+- [Using Poisson process to generate Poisson-distributed random sample](X2_gof_discrete.R)
 
 # Statistics
 
@@ -70,3 +71,4 @@ Some useful R code for reuse
 - [Survival: Fitting parametric survival model](plot_param_surv.R)
 - [Testing linear parameter restrictions in a normal linear regression model](test_param_rest_lm.R)
 - [Bayesian: Logistic regression with Metropolis sampling](logit_MCMC.R)
+- [Using Chi-square goodness-of-fit test to test discrete distribution](X2_gof_discrete.R)
