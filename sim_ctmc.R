@@ -1,6 +1,6 @@
 ####################################################################
 ##
-##   Simulating Continuous Time Markov Chains
+##   Simulating Continuous-Time Markov Chains
 ##
 ##   date:   6/7/2018
 ##   author: Balint Tamasi

@@ -59,7 +59,7 @@ Some useful R code for reuse
 - [Conway's Game of Life](gol.R)
 - [Wolfram's elementary cellular automata](elementary_ca.R)
 - [Using Poisson process to generate Poisson-distributed random sample](X2_gof_discrete.R)
-- [Simulate continuous time Markov chains](sim_ctmc.R)
+- [Simulate continuous-time Markov chains](sim_ctmc.R)
 
 # Statistics
 
