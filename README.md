@@ -60,6 +60,7 @@ Some useful R code for reuse
 - [Wolfram's elementary cellular automata](elementary_ca.R)
 - [Using Poisson process to generate Poisson-distributed random sample](X2_gof_discrete.R)
 - [Simulate continuous-time Markov chains](sim_ctmc.R)
+- [Simulate M/M/s/c queues](sim_queue.R)
 
 # Statistics
 
