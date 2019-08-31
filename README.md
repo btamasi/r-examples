@@ -61,6 +61,7 @@ Some useful R code for reuse
 - [Using Poisson process to generate Poisson-distributed random sample](X2_gof_discrete.R)
 - [Simulate continuous-time Markov chains](sim_ctmc.R)
 - [Simulate M/M/s/c queues](sim_queue.R)
+- [Posterior simulation using rejection sampling](reject_bayes.R)
 
 # Statistics
 
@@ -73,7 +74,9 @@ Some useful R code for reuse
 - [Survival: Fitting parametric survival model](plot_param_surv.R)
 - [Testing linear parameter restrictions in a normal linear regression model](test_param_rest_lm.R)
 - [Bayesian: Logistic regression with Metropolis sampling](logit_MCMC.R)
-- [Using Chi-square goodness-of-fit test to test discrete distribution](X2_gof_discrete.R)
+- [Using Chi-square goodness-of-fit test to test discrete
+  distribution](X2_gof_discrete.R)
+- [Posterior simulation using rejection sampling](reject_bayes.R)
 
 # Programming
 
