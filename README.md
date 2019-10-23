@@ -45,6 +45,7 @@ Some useful R code for reuse
 
 - [Match period beginnings to events in grouped data using rolling join in data.table](rolling_join.R)
 - [Read data from an url with RCurl](read_csv_from_url.R)
+- [Transfrom values to a data frame to formatted text](df2text.R)
 
 # Package specific
 
