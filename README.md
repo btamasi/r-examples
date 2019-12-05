@@ -2,7 +2,7 @@
 
 Some useful R code for reuse
 
-# Graphics
+# Graphics/output
 
 - [Draw grid behind histogram](add_grid_behind_histogram.R)
 - [Create jittered dotplot with median lines with ggplot2](jittered_dotplot_ggplot2.R)
@@ -18,6 +18,7 @@ Some useful R code for reuse
 - [Points with error bars using base R](error_bars.R)
 - [Histogram with legend for bar and line](hist_legend_bar_line.R)
 - [Create animation with library(animation)](gol.R)
+- [Printing colored text on terminal](col-text.R)
 
 # Vector and matrix manipulation
 
