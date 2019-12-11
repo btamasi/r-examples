@@ -39,3 +39,6 @@ rowSums(ic)
 
 ## This is orthonormal
 ic %*% t(ic)
+
+## To get only the linear and the quadratic
+contrasts(f, how.many = 2) <- contr.poly(nlevels(f))
