@@ -79,7 +79,7 @@ Some useful R code for reuse
 - [Using Chi-square goodness-of-fit test to test discrete
   distribution](X2_gof_discrete.R)
 - [Posterior simulation using rejection sampling](reject_bayes.R)
-- [Create split-coding by hand](split-coding.R)
+- [Setting coding schemes for discrete ordinal covariates](ordinal-coding.R)
 
 # Programming
 
