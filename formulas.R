@@ -113,7 +113,7 @@ remove_named_formula <- function(f, keep = NULL) {
 ## Create fake fromula to fool \code{\link[stats]{model.frame}} and related
 ## utility functions
 ## @param f Formula or call.
-## @param Split_left operator we allow to split terms of the left side of the
+## @param split_left Operator we allow to split terms of the left side of the
 ## formula on (if there's any).
 ## @param omit Variables to omit.
 ## @param keep_names Remove named arguments except these.
