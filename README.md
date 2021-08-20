@@ -52,6 +52,7 @@ Some useful R code for reuse
 
 - [survival: lagged time dependent covariates](lagged_tdc_survival.R)
 - [animation: creating animations and saving as gif](gol.R)
+- [data.table: rolling join](rolling_join.R)
 
 # Simulations
 
