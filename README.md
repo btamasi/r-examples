@@ -84,3 +84,4 @@ Some useful R code for reuse
 # Programming
 
 - [Assignment operators `=` vs `<-`](assignments.R)
+- [Working with formulas](formulas.R)
