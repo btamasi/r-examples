@@ -86,3 +86,7 @@ Some useful R code for reuse
 
 - [Assignment operators `=` vs `<-`](assignments.R)
 - [Working with formulas](formulas.R)
+
+# Misc 
+
+- [Look for package names in a directory and install them](inst_pkgs.R)
